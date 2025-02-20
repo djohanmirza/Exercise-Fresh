@@ -1,6 +1,8 @@
 package main
 
-import "github.com/djohanmirza/Exercise-Fresh/logic1"
+import (
+	"github.com/djohanmirza/Exercise-Fresh/logic2"
+)
 
 func main() {
 	//logic1.Nomor1()
@@ -13,5 +15,7 @@ func main() {
 	//logic1.Nomor8()
 	//logic1.Nomor9()
 	//logic1.Nomor10()
-	logic1.Nomor11()
+	//logic1.Nomor11()
+	n := 9
+	logic2.Nomor6a(n)
 }
