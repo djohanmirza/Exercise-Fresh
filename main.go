@@ -17,5 +17,10 @@ func main() {
 	//logic1.Nomor10()
 	//logic1.Nomor11()
 	n := 9
-	logic2.Nomor6a(n)
+	//logic2.Nomor6(n)
+	//logic2.Nomor1(n)
+	//logic2.Nomor2(n)
+	//logic2.Nomor3(n)
+	//logic2.Nomor4(n)
+	logic2.Nomor5(n)
 }
