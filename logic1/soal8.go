@@ -1,27 +1,33 @@
 package logic1
 
-import "fmt"
+func Nomor81(n int) []int {
+	mid := n / 2
+	num := 2
+	result := make([]int, n)
 
-func Nomor8() {
-	for i := 0; i < 10; i++ {
-		fmt.Print(2*i+2, " ")
-		if i == 4 {
-			for i := 5; i > 0; i-- {
-				fmt.Print(2*i, " ")
-			}
-			break
+	for i := 0; i < n; i++ {
+		result[i] = num
+		if i < mid {
+			num += 2
+		} else if i > mid {
+			num -= 2
 		}
 	}
+	return result
+}
 
-	fmt.Println(" ")
+func Nomor82(n int) []int {
+	mid := n / 2
+	num := 2
+	result := make([]int, n)
 
-	for i := 0; i < 10; i++ {
-		fmt.Print(2*i+2, " ")
-		if i == 5 {
-			for i := 5; i > 0; i-- {
-				fmt.Print(2*i, " ")
-			}
-			break
+	for i := 0; i < n; i++ {
+		result[i] = num
+		if i < mid {
+			num += 2
+		} else if i >= mid {
+			num -= 2
 		}
 	}
+	return result
 }

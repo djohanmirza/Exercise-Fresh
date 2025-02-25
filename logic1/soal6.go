@@ -1,9 +1,11 @@
 package logic1
 
-import "fmt"
-
-func Nomor6() {
-	for i := 10; i > 0; i-- {
-		fmt.Print(3*i, " ")
+func Nomor6(n int) []int {
+	num := 30
+	result := make([]int, n)
+	for i := 0; i < n; i++ {
+		result[i] = num
+		num -= 3
 	}
+	return result
 }
