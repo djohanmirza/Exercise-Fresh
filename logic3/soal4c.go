@@ -7,12 +7,16 @@ func Soal4c(n int) (result [][]int) {
 
 	num := 1
 	for i := 0; i < n; i++ {
+		geser := 0
 		for j := 0; j < n; j++ {
-			if i+j >= n-1 {
+			if i+j == n-1 {
 				if i%2 == 1 {
-					result[i][j] = num
+					result[i][j] = num //normal
 				} else {
-					result[i][2*(n-1)-i-j] = num
+					// harusnya 0,8
+					// harusnya yang diisi 6, 7, 8
+					result[i][n-1-geser] = num
+					geser++
 				}
 				num += 2
 			}

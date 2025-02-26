@@ -28,6 +28,6 @@ func main() {
 	//logic2.Nomor4(n)
 	//logic2.Nomor5(n)
 
-	result := logic3.Soal10c(9)
+	result := logic3.Soal12c(9)
 	utils.Print2D(result)
 }
